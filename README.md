@@ -6,4 +6,5 @@ Made by ![image](https://github.com/user-attachments/assets/b817ae66-faa5-467d-b
 
 The Fork Of Paper That Accepts Sponge Plugin. 
 
-# 
+# Why Smart?
+Think of something, you want to use Sponge for Developing Plugins On Your Own. You Also Want to use Bukkit for vast Library plugins. so, we developed an Implementation Of Sponge As a Paper Server.
