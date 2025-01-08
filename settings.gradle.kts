@@ -13,6 +13,6 @@ plugins {
 rootProject.name = "ApproximasterSmartServer2004"
 
 // include("Smart-API") // Seperate API. The API Will Be Seperated if the Smart-API is Complete.
-include("Smart-BukkitAPI") // an Official Name For Legacy API Updates.
+include("Smart-BukkitAPI") // an Official Name For Legacy API Updates. SmartAPI Will be Included on Here until it's complete.
 // include("Smart-PaperAPI") // In case PaperMC Split.
 include("Smart-Server") // The Server File. 
