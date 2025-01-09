@@ -5,7 +5,7 @@
 
 Paper와 Spigot을 포크한 뒤 스펀지를 추가한 서버 구현체. 
 
-Copyright (C) 2022-2025, Approximaster Studios 2004. All Rights Reversed
+Copyright (C) 2022-2025, Approximaster Studios 2004. All Rights Reversed. Bukkit/Spigot is Licensed Under GPLv3 and it's a Registered Trademark of SpigotMC Pty Ltd and Bukkit Team. and Sponge API is Licensed under MIT and it's a Registered Trademark of SpongePowered.
 # 스마트 역대 로고 변천사
 ![image](https://github.com/user-attachments/assets/365c5f27-fc6d-4fbe-b7aa-cf2eabcdf5db)\
 2B2T에이이앤비이 서버버킷부문 버킷X(폐지: 2022년 5월)\
