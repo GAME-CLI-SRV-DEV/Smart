@@ -154,8 +154,11 @@ java.lang.NoSuchMethodException: net.minecraft.world.level.block.entity.TileEnti
 [14:19:37 INFO]: 라이브러리를 성공적으로 로딩하였습니다. API 실행 중...
 [14:19:37 INFO]: SmartModLoaderAPI is Loading...
 [14:19:37 INFO]: SmartModLoaderAPI: Loading Mod: SmartMod 1.2
-[14:19:37 INFO]: [com.ddnsgeek.approximasterstudios2004.server.SmartModLoader] Loading SmartMod v1.2
-[14:19:37 INFO]: [com.ddnsgeek.approximasterstudios2004.server.SmartModLoader] [Smart]
+[14:19:37 INFO]: [com.ddnsgeek.approximasterstudios2004.server.SmartModLoader.main] Loading SmartMod v1.2
+[14:19:37 INFO]: [com.ddnsgeek.approximasterstudios2004.server.SmartModLoader.api.ClassMod.Legacy] Alert: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+[14:19:37 INFO]: [com.ddnsgeek.approximasterstudios2004.server.SmartModLoader.api.ClassMod.Legacy] Alert: Smart 모드 SmartMod는 몹을 추가하는데 Craftbukkit/NMS에 액세스하였습니다. Smart 모드는 MysticMob 통합 API를 사용해야만 합니다.
+[14:19:37 INFO]: [com.ddnsgeek.approximasterstudios2004.server.SmartModLoader.api.ClassMod.Legacy] Alert: Smart 모드 SmartMod는 아이템을 추가하는데 Bukkit의 ItemStack/CraftItemStack을 사용했습니다. Smart 모드는 Slimefun의 ItemStack을 사용하여야만 합니다.
+[14:19:37 INFO]: [com.ddnsgeek.approximasterstudios2004.server.SmartModLoader.api.ClassMod.Legacy] Alert: 따라서 해당 모드는 SmartModPlugin을 Implement하나 Bukkit 플러그인으로 분류합니다. Bukkit 플러그인 상태의 Smart 모드는 일부 기능이 작동하지 않습니다.
 [14:19:37 INFO]: Smart가 성공적으로 시작되었습니다.
 [14:19:37 INFO]: Done! (X.xxs) Type "help" for help.
 smart
