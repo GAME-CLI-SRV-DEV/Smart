@@ -8,19 +8,32 @@ Paper와 Spigot을 포크한 뒤 스펀지를 추가한 서버 구현체.
 Copyright (C) 2022-2025, Approximaster Studios 2004. All Rights Reversed. Bukkit/Spigot is Licensed Under GPLv3 and it's a Registered Trademark of SpigotMC Pty Ltd and Bukkit Team. and Sponge API is Licensed under MIT and it's a Registered Trademark of SpongePowered.
 
 # 서버 시작
-서버를 시작하려면, java -jar ApproximasterSmartServer2004-paperclip-1.21.4-R0.1-SNAPSHOT-Mojmap.jar를 입력하세요.
+서버를 시작하려면, java -jar ApproximasterSmartServer2004-paperclip-1.21.4-R0.1-SNAPSHOT-Mojmap.jar를 입력하세요. 컴퓨터에 설치한 채로 시작하는 경우, smartstart를 입력하세요. 
 ```
-downloading mojang-1.21.4.jar...
-applying patches...
+downloading mojang-1.21.4.jar
+Applying patches
 Starting org.bukkit.craftbukkit.main...
 [14:19:15 INFO]: [bootstrap] Running Java 21 (Java HotSpot(TM) 64-Bit Server VM 21.0.2+13-LTS-58; Oracle Corporation null) on Windows 10 10.0 (amd64)
+
 똑똑한 서버 모드 로더, 스마트!
+
 Copyright (C) 2022-2025, Approximaster Studios 2004, All Rights Reversed.
+
+SSSSSSS M      M     A     RRRRRRR  TTTTTTT
+S       MM    MM  A     A  R      R    T
+SSSSSSS M M  M M AAAAAAAAA RRRRRRR     T
+      S M   M  M A       A R      R    T
+SSSSSSS M      M A       A R      R    T
+
+Loading...
+
 [14:19:16 INFO]: [bootstrap] Loading Smart 1.21.4-DEV-master@XXXXXXX for Minecraft 1.21.4...
 [14:19:17 INFO]: [PluginInitializerManager] Initializing plugins...
-[14:19:18 INFO]: [PluginInitializerManager] Initialized 0 plugins
-[14:19:18 INFO]: [PluginInitializerManager] Bukkit plugins (2):
-BukkitPlugin (1.0), SpongePlugin (2.0)
+[14:19:18 INFO]: [PluginInitializerManager] Initialized 3 plugins
+[14:19:18 INFO]: [PluginInitializerManager] Bukkit plugins (3):
+BukkitPlugin (1.0), SpongePlugin (2.0), SmartModLoader(1.21.4-R0.1-SNAPSHOT)
+[14:19:18 INFO]: [PluginInitializerManager] Smart Mods (1):
+SmartMod (1.2)
 [14:19:18 WARN]: This Server is Based On Bukkit, and we support Sponge/Rainbow Plugins. unfortunately, Sponge/Rainbow Plugin Would have to use plugin.yml, so we can trick the Bukkit API we Loading Bukkit Plugin.
 [14:19:18 INFO]: Slimefun is integrated to this project. Put the Slimefun Jar to Override The Version. 
 [14:19:22 INFO]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
@@ -138,18 +151,26 @@ java.lang.NoSuchMethodException: net.minecraft.world.level.block.entity.TileEnti
 .
 .
 .
-[14:19:37 INFO] 슬라임펀, 미스틱몹, 아이템에딧, 오락센 라이브러리를 성공적으로 로딩하였습니다.
-[14:19:37 INFO] Smart가 성공적으로 시작되었습니다.
-[14:19:37 INFO] 시작! 도움말을 보려면 help을 입력하세요!
+[14:19:37 INFO]: 라이브러리를 성공적으로 로딩하였습니다. API 실행 중...
+[14:19:37 INFO]: SmartModLoaderAPI is Loading...
+[14:19:37 INFO]: SmartModLoaderAPI: Loading Mod: SmartMod 1.2
+[14:19:37 INFO]: [com.ddnsgeek.approximasterstudios2004.server.SmartModLoader] Loading SmartMod v1.2
+[14:19:37 INFO]: [com.ddnsgeek.approximasterstudios2004.server.SmartModLoader] [Smart]
+[14:19:37 INFO]: Smart가 성공적으로 시작되었습니다.
+[14:19:37 INFO]: Done! (X.xxs) Type "help" for help.
+smart
+[14:19:40 INFO] smartmodloader version 1.21.4-R0.1-SNAPSHOT
+Copyright (C) 2025-2024 Approximaster Studios 2004. All Rights Reversed.
+Some Features of Bukkit API is Deprecated.
 ```
-슬라임펀, 미스틱몹, 아이템에딧, 오락센 로딩/시작에 성공했을 시에는\
-초록색으로 슬라임펀, 미스틱몹, 아이템에딧, 오락센 라이브러리를 성공적으로 실행했습니다.\
+라이브러리 로딩/시작에 성공했을 시에는\
+초록색으로 라이브러리를 성공적으로 로딩하였습니다. API 실행 중\
 문구가 출력되지만,
-슬라임펀, 미스틱몹, 아이템에딧, 오락센 중 일부 라이브러리가 로딩/시작했을 시에는\
-노란색으로 슬라임펀, 미스틱몹, 아이템에딧, 오락센 라이브러리를 성공적으로 로딩하였지만. 일부분 시작되었습니다. (기능 제한으로 실행 중)\
+일부 라이브러리가 로딩/시작했을 시에는\
+노란색으로 라이브러리를 성공적으로 로딩하였지만. 일부분 시작되었습니다. (모드 기능 일부 제한으로 실행 중)\
 아예 시작에 실패한 경우,
 빨간색으로 라이브러리를 시작할 수 없습니다! 모드로더가 종료됩니다...\
-문구가 출력됩니다.
+문구가 출력됩니다. 완전 시작에 실패한 경우에는, 스마트모드로더가 기능하지 않으며 버킷, 스펀지 플러그인만 구동가능합니다. 
 
 
 
