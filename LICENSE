@@ -6,6 +6,6 @@ To Install SmartMC, Please Agree to this License.
 Smart is a Implementation Of SpongeAPI and BukkitAPI Along With it's own API.
 The License Ratio is MIT:1 and GPL:1.
 
-resulting it's current state. Changing the License Agreement to true will Install SmartMC Jarfile (ApproximasterSmartServer2004-Paperclip-1.21.4-R0.1-SNAPSHOT-Mojmap.jar).
+resulting it's current state. SmartMC Jarfile is ApproximasterSmartServer2004-Paperclip-1.21.4-R0.1-SNAPSHOT-Mojmap.jar.
 
 It's Available to Skip this by running ./gradlew smartmcjar. this is a first party for distribution. However to install this for permanent use without downloading, You have to use our official installer.
