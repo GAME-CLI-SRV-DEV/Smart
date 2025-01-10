@@ -82,7 +82,7 @@ tasks.register("Smart-Distribute") {
     dependsOn("createMojmapPaperclipJar")
     doLast {
         file("build/libs/${rootProject.name}-paperclip-${project.version}-mojmap.jar").renameTo(
-            file("build/libs/${rootProject.name}-paperclip-${project.version}-${project.Sponge}-MojangMapped.jar")
+            file("build/libs/${rootProject.name}-paperclip-${project.version}+SPONGE-${project.Sponge}-MojangMapped.jar")
         )
     }
 }
