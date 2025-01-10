@@ -77,7 +77,15 @@ subprojects {
             events(TestLogEvent.STANDARD_OUT)
         }
     }
-
+tasks.register("Smart-Distribute") {
+    group = "paperweight"
+    dependsOn("createMojmapPaperclipJar")
+    doLast {
+        file("build/libs/${rootProject.name}-paperclip-${project.version}-mojmap.jar").renameTo(
+            file("build/libs/Leaves-leavesclip-${project.version}-mojmap.jar")
+        )
+    }
+}
     extensions.configure<PublishingExtension> {
         repositories {
             /*
@@ -89,3 +97,4 @@ subprojects {
         }
     }
 }
+
