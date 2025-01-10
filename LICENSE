@@ -8,4 +8,4 @@ The License Ratio is MIT:1 and GPL:1.
 
 resulting it's current state. Changing the License Agreement to true will Install SmartMC Jarfile (ApproximasterSmartServer2004-Paperclip-1.21.4-R0.1-SNAPSHOT-SPONGEAPI-12.0.0-SNAPSHOT-Mojmap.jar).
 
-It's Available to Skip this by running ./gradlew smartmcinstallwithnolicense. this is a first party for distribution. However to install this for permanent use without downloading, You have to use our official installer.
+It's Available to Skip this by running ./gradlew smartmcjar. this is a first party for distribution. However to install this for permanent use without downloading, You have to use our official installer.
