@@ -77,7 +77,7 @@ subprojects {
             events(TestLogEvent.STANDARD_OUT)
         }
     }
-tasks.register("Smart-Distribute") {
+tasks.register("Smart") {
     group = "paperweight"
     dependsOn("createMojmapPaperclipJar")
     doLast {
