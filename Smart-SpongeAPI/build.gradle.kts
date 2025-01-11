@@ -1,4 +1,4 @@
-val version = rootProject.providers.gradleProperty("version").get()
+val version = rootProject.providers.gradleProperty("Sponge").get()
 
 repositories {
     mavenCentral()
