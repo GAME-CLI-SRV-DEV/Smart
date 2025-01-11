@@ -4,7 +4,7 @@ repositories {
     mavenCentral()
     maven {
         name = 'sponge-repo'
-        url = 'https://repo.spongepowered.org/repository/maven-public/'
+        url = 'https://repo.spongepowered.org/repository/maven-snapshots/'
     }
 }
 
