@@ -81,6 +81,7 @@ tasks.register("Smart") {
     group = "paperweight"
     dependsOn("createMojmapPaperclipJar")
     doLast {
+       val sponge = project.property("Sponge") as String
         file("build/libs/${rootProject.name}-paperclip-${project.version}-mojmap.jar").renameTo(
             file("build/libs/${rootProject.name}-paperclip-${project.version}+SPONGE-${project.Sponge}-MojangMapped.jar")
         )
