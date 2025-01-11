@@ -9,5 +9,5 @@ repositories {
 }
 
 dependencies {
-    implementation("org.spongepowered:spongeapi:" + version)
+    implementation("org.spongepowered:spongeapi:$version")
 }
