@@ -1,44 +1,55 @@
---- a/paper-api/build.gradle.kts
-+++ b/paper-api/build.gradle.kts
-@@ -103,6 +_,18 @@
-     main {
-         java {
-             srcDir(generatedApiPath)
-+            srcDir(file("../paper-api/src/main/java"))
-+        }
-+        resources {
-+            srcDir(file("../paper-api/src/main/resources"))
+--- a/paper-server/build.gradle.kts
++++ b/paper-server/build.gradle.kts
+@@ -21,8 +21,19 @@
+     // macheOldPath = file("F:\\Projects\\PaperTooling\\mache\\versions\\1.21.4\\src\\main\\java")
+     // gitFilePatches = true
+
++    val fork = forks.register("ApproximasterSmartServer2004") {
++        upstream.patchDir("paperServer") {
++            upstreamPath = "paper-server"
++            excludes = setOf("src/minecraft", "patches", "build.gradle.kts")
++            patchesDir = rootDirectory.dir("Smart-Server/paper-patches")
++            outputDir = rootDirectory.dir("paper-server")
 +        }
 +    }
-+    test {
-+        java {
-+            srcDir(file("../paper-api/src/test/java"))
-+        }
-+        resources {
-+            srcDir(file("../paper-api/src/test/resources"))
-         }
++
++    activeFork = fork
++
+     paper {
+-        reobfMappingsPatch = layout.projectDirectory.file("../build-data/reobf-mappings-patch.tiny")
++        paperServerDir = upstreamsDirectory().map { it.dir("paper/paper-server") }
+     }
+
+     spigot {
+@@ -105,7 +116,20 @@ 
      }
  }
-@@ -169,7 +_,7 @@
- 
- tasks.withType<Javadoc> {
-     val options = options as StandardJavadocDocletOptions
--    options.overview = "src/main/javadoc/overview.html"
-+    options.overview = "../paper-api/src/main/javadoc/overview.html"
-     options.use()
-     options.isDocFilesSubDirs = true
-     options.links(
-@@ -202,11 +_,11 @@
-     }
- 
-     // workaround for https://github.com/gradle/gradle/issues/4046
--    inputs.dir("src/main/javadoc").withPropertyName("javadoc-sourceset")
-+    inputs.dir("../paper-api/src/main/javadoc").withPropertyName("javadoc-sourceset")
-     val fsOps = services.fileSystemOperations
-     doLast {
-         fsOps.copy {
--            from("src/main/javadoc") {
-+            from("../paper-api/src/main/javadoc") {
-                 include("**/doc-files/**")
-             }
-             into("build/docs/javadoc")
+
+-val log4jPlugins = sourceSets.create("log4jPlugins")
++sourceSets {
++    main {
++        java { srcDir("../paper-server/src/main/java") }
++        resources { srcDir("../paper-server/src/main/resources") }
++    }
++    test {
++        java { srcDir("../paper-server/src/test/java") }
++        resources { srcDir("../paper-server/src/test/resources") }
++    }
++}
++
++val log4jPlugins = sourceSets.create("log4jPlugins") {
++    java { srcDir("../paper-server/src/log4jPlugins/java") }
++}
+ configurations.named(log4jPlugins.compileClasspathConfigurationName) {
+     extendsFrom(configurations.compileClasspath.get())
+ }
+@@ -123,7 +147,8 @@
+ }
+
+ dependencies {
+-    implementation(project(":paper-api"))
++    implementation(project(":Smart-BukkitAPI"))
++       // Sponge API Soon
+     implementation("ca.spottedleaf:concurrentutil:0.0.2")
+     implementation("org.jline:jline-terminal-ffm:3.27.1") // use ffm on java 22+
+     implementation("org.jline:jline-terminal-jni:3.27.1") // fall back to jni on java 21
