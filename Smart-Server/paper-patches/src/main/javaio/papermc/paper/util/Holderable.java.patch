@@ -1,0 +1,13 @@
+@@ -31,11 +31,11 @@ public interface Holderable<M> extends Handleable<M> {
+                 if (!(Key.parseable(string))) {
+                     yield null;
+                 }
+                 yield registry.get(Key.key(string));
+             }
+-            case JsonObjectWrapper(final JsonObject element) -> {
++            case JsonObjectWrapper JsonObjectWrapper -> {
+                 if (!(registry instanceof final CraftRegistry<?, ?> craftRegistry) || !craftRegistry.supportsDirectHolders()) {
+                     throw new IllegalArgumentException("Cannot deserialize direct holders for " + registry);
+                 }
+                 final RegistryOps<JsonElement> ops = CraftRegistry.getMinecraftRegistry().createSerializationContext(JsonOps.INSTANCE);
+                 final Holder<M> holder = codec.decode(ops, element).getOrThrow().getFirst();
