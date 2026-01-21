@@ -8,7 +8,7 @@ Paper와 Spigot을 포크한 뒤 스펀지를 추가한 서버 구현체.
 Copyright (C) 2022-2025, Approximaster Studios 2004. All Rights Reversed. Bukkit/Spigot is Licensed Under GPLv3 and it's a Registered Trademark of SpigotMC Pty Ltd and Bukkit Team. and Sponge API is Licensed under MIT and it's a Registered Trademark of SpongePowered.
 
 # 서버 시작
-서버를 시작하려면, java -jar ApproximasterSmartServer2004-paperclip-1.21.4-R0.1-SNAPSHOT-Mojmap.jar를 입력하세요. 컴퓨터에 설치한 채로 시작하는 경우, smartstart를 입력하세요. 
+서버를 시작하려면, java -jar ApproximasterSmartServer2004-paperclip-1.21.4-R0.1-SNAPSHOT-Mojmap.jar를 입력하세요.
 ```
 downloading mojang-1.21.4.jar
 Applying patches
@@ -167,12 +167,12 @@ Copyright (C) 2025-2024 Approximaster Studios 2004. All Rights Reversed.
 Some Features of Bukkit API is Deprecated.
 ```
 라이브러리 로딩/시작에 성공했을 시에는\
-초록색으로 라이브러리를 성공적으로 로딩하였습니다. API 실행 중\
+초록색으로 `라이브러리를 성공적으로 로딩하였습니다. API 실행 중`
 문구가 출력되지만,
 일부 라이브러리가 로딩/시작했을 시에는\
-노란색으로 라이브러리를 성공적으로 로딩하였지만. 일부분 시작되었습니다. (모드 기능 일부 제한으로 실행 중)\
+노란색으로 `라이브러리를 성공적으로 로딩하였지만. 일부분 시작되었습니다. (모드 기능 일부 제한으로 실행 중)`
 아예 시작에 실패한 경우,
-빨간색으로 라이브러리를 시작할 수 없습니다! 모드로더가 종료됩니다...\
+빨간색으로 `라이브러리를 시작할 수 없습니다! 모드로더가 종료됩니다`...
 문구가 출력됩니다. 완전 시작에 실패한 경우에는, 스마트모드로더가 기능하지 않으며 버킷, 스펀지 플러그인만 구동가능합니다. 
 
 
@@ -180,7 +180,7 @@ Some Features of Bukkit API is Deprecated.
 # 스마트 역대 로고 변천사
 ![image](https://github.com/user-attachments/assets/365c5f27-fc6d-4fbe-b7aa-cf2eabcdf5db)\
 2B2T에이이앤비이 서버버킷부문 버킷X(폐지: 2022년 5월)\
-게임앤클라이언트 녹양스피곳(녹양중학교 교표를 로고로 사용, 폐지: 2024년 5월)\
+게임앤클라이언트 녹양스피곳(녹양중학교 교표를 로고로 사용, 폐지: 2024년 5월, 부활: 2025년 1월)\
 ![image](https://github.com/user-attachments/assets/fb5d0028-5b14-4d14-b423-c6a5789fd5cf)\
 게임앤클라이언트 라디오액티브 -> 게임앤클라이언트 상상 -> 아프록시마스터 스튜디오 상상(폐지: 2024년 11월 개발 중단, 2025년 브랜드 폐지)
 
